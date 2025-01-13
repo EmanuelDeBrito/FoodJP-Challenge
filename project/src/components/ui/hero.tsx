@@ -5,7 +5,7 @@ export const Hero = () => {
     return(
         <section className="flex items-center gap-[200px]">
             <div>
-                <div className="mb-[18px] text-[48px] text-[#232323] font-400">
+                <div className="mb-[18px] text-[48px] text-[#232323] koh">
                     Comida Oriental
                 </div>
                 <div className="mb-12 text-[24px] text-[#232323]">

@@ -3,7 +3,7 @@ import { Poppins, Koh_Santepheap } from "next/font/google";
 import "./globals.css";
 
 const getPoppins = Poppins({
-  weight: '500'
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"]
 });
 
 const getKoh = Koh_Santepheap({
