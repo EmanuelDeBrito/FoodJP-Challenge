@@ -13,6 +13,7 @@ export const Logo = ({ width, height }: Props) => {
             height={height}
             alt="Logo"  
             quality={100}      
+            className="cursor-pointer"
         />
     )
 }

@@ -4,13 +4,13 @@ import { Logo } from "./logo"
 
 export const Header = () => {
     return(
-        <header className="flex justify-between items-center">
+        <header className="flex justify-center items-center lg:justify-between">
             <Logo 
                 width={154}
                 height={41}
             />
 
-            <nav className="flex items-center">
+            <nav className="hidden items-center lg:flex">
                 <ul className="flex items-center gap-14">
                     <NavItem label="Início" />
                     <NavItem label="Sobre Nós" />
@@ -18,9 +18,11 @@ export const Header = () => {
                 </ul>
             </nav>
 
-            <Button 
-                label="Baixar o App"            
-            />
+            <div className="hidden lg:block">
+                <Button 
+                    label="Baixar o App"            
+                />
+            </div>
         </header>   
     )
 }

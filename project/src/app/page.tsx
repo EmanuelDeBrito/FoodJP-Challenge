@@ -10,13 +10,13 @@ import { CommentData } from "@/data/comment-data"
 
 const Page = () => {
     return(
-        <div className="flex flex-col gap-[100px] max-w-6xl mx-auto py-8">
+        <div className="flex flex-col gap-[30px] max-w-6xl mx-auto py-8 px-6 lg:px-0 lg:gap-[100px]">
             <Header />
             <Hero />
             <AboutUs />
             <section>
-                <div className="mb-[130px] text-[48px] text-[#232323] text-center koh">Populares</div>
-                <div className="grid grid-cols-3 gap-8">
+                <div className="mb-[130px] text-[34px] text-[#232323] text-center koh lg:text-[48px]">Populares</div>
+                <div className="grid grid-cols-1 gap-[100px] lg:grid-cols-3 lg:gap-8">
                     {CardData.map((item, key) => (
                         <CardItem 
                             key={key}
@@ -26,8 +26,8 @@ const Page = () => {
                 </div>
             </section>
             <section>
-                <div className="mb-14 text-[48px] text-[#232323] text-center koh">Comentarios</div>
-                <div className="grid grid-cols-2 gap-8">
+                <div className="mb-14 text-[34px] text-[#232323] text-center koh lg:text-[48px]">Comentarios</div>
+                <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
                     {CommentData.map((item, key) => (
                         <CommentItem
                             key={key} 
@@ -37,13 +37,13 @@ const Page = () => {
                 </div>
             </section>
             <section>
-                <div className="flex justify-between items-center mb-[50px]">
+                <div className="flex flex-col gap-10 mb-[50px] lg:flex-row lg:justify-between lg:items-center lg:gap-0">
                     <InformationArea 
                         title="Produto"
                         topics={["Todos", "Sushi", "Premium"]}                
                     />
                     <InformationArea 
-                        title="Informações"
+                        title="Informaçoes"
                         topics={["FAQ", "Blog", "Suporte"]}                
                     />
                     <InformationArea 

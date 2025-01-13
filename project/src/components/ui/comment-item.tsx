@@ -21,9 +21,9 @@ export const CommentItem = ({ data }: Props) => {
                 />
             </div>
 
-            <div className="mb-4 text-[32px] text-[#232323] koh">{data.name}</div>
+            <div className="mb-4 text-[20px] text-[#232323] koh lg:text-[32px]">{data.name}</div>
 
-            <div className="mb-7 text-[24px] text-[#232323] font-400">{data.opinion}</div>
+            <div className="mb-7 text-[14px] text-[#232323] font-400 lg:text-[24px]">{data.opinion}</div>
 
             <div className="flex items-center gap-3">
                 <Stars 

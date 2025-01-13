@@ -2,14 +2,26 @@ import Image from "next/image"
 
 export const AboutUs = () => {
     return(
-        <section className="flex items-center gap-[100px]">
-            <Image 
-                src={"/prato.png"}
-                width={1200}
-                height={800}
-                alt="Prato"
-                quality={100}            
-            />
+        <section className="flex flex-col items-center gap-[30px] lg:flex-row lg:gap-[100px]">
+            <div className="hidden lg:block">
+                <Image 
+                    src={"/prato.png"}
+                    width={1200}
+                    height={800}
+                    alt="Prato"
+                    quality={100}            
+                />
+            </div>
+
+            <div className="block lg:hidden">
+                <Image 
+                    src={"/prato.png"}
+                    width={600}
+                    height={200}
+                    alt="Prato"
+                    quality={100}            
+                />
+            </div>
 
             <div>
                 <div className="mb-2 text-[24px] text-[#FF0000] koh">Sobre nos</div>

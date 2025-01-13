@@ -19,11 +19,11 @@ export const CardItem = ({ data }: Props) => {
             </div>
 
             <div className="flex flex-col items-center gap-6 px-5 mt-10">
-                <div className="text-[32px] text-[#232323] koh">{data.name}</div>
+                <div className="text-[20px] text-[#232323] koh lg:text-[32px]">{data.name}</div>
 
-                <div className="text-[18px] text-[#232323] font-400 text-center">{data.description}</div>
+                <div className="text-[14px] text-[#232323] font-400 text-center lg:text-[18px]">{data.description}</div>
 
-                <div className="text-[32px] text-[#FF0000] koh">R$ {data.price}</div>
+                <div className="text-[20px] text-[#FF0000] koh lg:text-[32px]">R$ {data.price}</div>
             </div>
         </div>
     )
